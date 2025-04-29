@@ -1,0 +1,40 @@
+// {
+//   "include": ["client/src/**/*", "shared/**/*", "server/**/*"],
+//   "exclude": ["node_modules", "build", "dist", "**/*.test.ts"],
+//   "compilerOptions": {
+//     "incremental": true,
+//     "tsBuildInfoFile": "./node_modules/typescript/tsbuildinfo",
+//     "noEmit": true,
+//     "module": "ESNext",
+//     "strict": true,
+//     "lib": ["esnext", "dom", "dom.iterable"],
+//     "jsx": "preserve",
+//     "esModuleInterop": true,
+//     "skipLibCheck": true,
+//     "allowImportingTsExtensions": true,
+//     "moduleResolution": "bundler",
+//     "baseUrl": "client/src",
+//     "types": ["node", "vite/client"],
+//     "paths": {
+//       "@/*": ["*"],
+//       "@shared/*": ["./shared/*"]
+//     }
+//   }
+// }
+{
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "module": "ESNext",
+    "target": "ESNext",
+    "moduleResolution": "Node",
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["client/src/*"]
+    },
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+    "strict": true
+  },
+  "include": ["client/src", "tailwind.config.ts"]
+}
